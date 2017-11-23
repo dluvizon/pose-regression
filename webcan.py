@@ -15,6 +15,13 @@ import matplotlib.pyplot as plt
 video_device = '/dev/video0'
 cam_res = (1280, 720)
 
+weights_file = 'reception_mpii_weights_tf_ch_last_v1.h5'
+TF_WEIGHTS_PATH = \
+        'https://github.com/dluvizon/pose-regression/releases/download/0.1.1/' \
+        + weights_file
+md5_hash = '0f41d21e6c049ca590b520367f950f7f'
+cache_subdir = 'models'
+
 try:
     print ('Opening device ' + str(video_device) + ' with resolution ' +
             str(cam_res))
@@ -41,6 +48,7 @@ print ('Network input shape ' + str(input_shape))
 
 # Load keras and posereg libs
 from keras.models import Model
+from keras.utils.data_utils import get_file
 
 import posereg
 from posereg import pa16j
@@ -147,7 +155,9 @@ def main_thread():
 
     # Build the model and load the pre-trained weights on MPII
     model = posereg.build(input_shape, pa16j.num_joints, export_heatmaps=True)
-    model.load_weights('models/reception_mpii_weights_tf_ch_last_v1.h5')
+    weights_path = get_file(weights_file, TF_WEIGHTS_PATH, md5_hash=md5_hash,
+            cache_subdir=cache_subdir)
+    model.load_weights(weights_path)
 
     queue_frames = queue.Queue(2)
     queue_poses = queue.Queue(2)
