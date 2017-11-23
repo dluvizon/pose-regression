@@ -131,6 +131,7 @@ def thread_grab_frames(queue_frames, queue_poses):
         screen.blit(frame, (0,0))
         pred = queue_poses.get()
 
+        # Unpack received data
         x = pred[-1][0]
         hm = pred[-2][0]
         v = pred[-3]
