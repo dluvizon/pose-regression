@@ -7,7 +7,7 @@ This software implements a human pose regression method based on the Soft-argmax
 
 The network is implemented using [Keras](https://keras.io/) of top of TensorFlow and Python 3.
 
-We provide a [code](demo_webcan.py) for live demonstration using video frames captured by a webcan. Small changes in the code may be required for hardware compatibility.
+We provide a [code](webcan.py) for live demonstration using video frames captured by a webcan. Small changes in the code may be required for hardware compatibility.
 
 The software requires the following packges:
 
