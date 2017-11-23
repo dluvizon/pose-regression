@@ -1,2 +1,5 @@
 # h5 files (weights)
 *.h5
+
+# Ignore compiled python code
+__pycache__
