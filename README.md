@@ -25,18 +25,15 @@ please cite the paper:
 
 
 ```
-@article{Luvizon_CoRR_2017,
-  author    = {Diogo C. Luvizon and Hedi Tabia and David Picard},
-  title     = {{Human Pose Regression by Combining Indirect Part Detection and Contextual Information}},
-  journal   = {CoRR},
-  volume    = {abs/1710.02322},
-  year      = {2017},
-  url       = {http://arxiv.org/abs/1710.02322},
-  archivePrefix = {arXiv},
-  eprint    = {1710.02322},
-  timestamp = {Wed, 01 Nov 2017 19:05:43 +0100},
-  biburl    = {http://dblp.org/rec/bib/journals/corr/abs-1710-02322},
-  bibsource = {dblp computer science bibliography, http://dblp.org}
+@article{LUVIZON201915,
+title = "Human pose regression by combining indirect part detection and contextual information",
+author = "Diogo C. Luvizon and Hedi Tabia and David Picard",
+journal = "Computers and Graphics",
+volume = "85",
+pages = "15 - 22",
+year = "2019",
+issn = "0097-8493",
+doi = "https://doi.org/10.1016/j.cag.2019.09.002",
 }
 ```
 
