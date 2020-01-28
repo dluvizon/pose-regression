@@ -28,7 +28,7 @@ please cite the paper:
 @article{LUVIZON201915,
 title = "Human pose regression by combining indirect part detection and contextual information",
 author = "Diogo C. Luvizon and Hedi Tabia and David Picard",
-journal = "Computers and Graphics",
+journal = "Computers \& Graphics",
 volume = "85",
 pages = "15 - 22",
 year = "2019",
